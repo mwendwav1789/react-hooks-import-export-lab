@@ -1,10 +1,10 @@
-import "@testing-library/jest-dom";
+import React from "react";
 import { render } from "@testing-library/react";
-import App from "../components/App";
+import App from "../components/App"; // Adjust the path as needed
 
-test("it renders without crashing", () => {
+test("renders App without crashing", () => {
   try {
-    expect(() => render(<App />)).not.toThrow();
+    render(<App />);
   } catch (e) {
     throw new Error("Make sure to import the required components!");
   }
